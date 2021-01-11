@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slw-service>
+    <slwControllers>
+    </slwControllers>
+    <slwRestServices>
+        <service class="com.css.app.base.login.action.LoginResource"/>
+        <service class="com.css.app.base.vcode.action.VCodeResource"/>
+        <service class="com.css.app.base.menu.action.MenuResource"/>
+        <service class="com.css.app.base.auth.action.AuthResource"/>
+        <service class="com.css.app.base.sdict.action.SDictResource"/>
+        <service class="com.css.app.base.common.attachment.action.AttachmentResource"/>
+        <service class="com.css.app.base.common.attachconfig.action.AttachconfigResource"/>
+        <service class="com.css.app.base.common.attach.action.FileAttachResource"/>
+        <service class="com.css.app.base.cron.action.CronResource"/>
+
+    </slwRestServices>
+</slw-service>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fields>
+ 	<field name="content" />
+ 	<field name="extraPara" />
+ 	<field name="remark" />
+ 	<field name="item.content" />
+ 	<field name="processContent"/>
+ 	<field name="resultType" />
+ 	<field name="paraType" />
+</fields>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<slw-config>
+	<interceptors>
+		<interceptor name="htmlInterceptor" class="org.slw.framework.interceptor.HtmlInterceptor">
+			<tag name="slw.Rest.Arg0" />
+		</interceptor>
+
+		<!-- IP白名单，支持 192.168.1.1, 192.168.1.*, 192.168.1.1-255, *等 -->
+		<interceptor name="ipWhiteList" class="org.slw.framework.interceptor.IpWhiteListInterceptor">
+		</interceptor>
+
+		<!-- IP黑名单 -->
+		<interceptor name="ipBlackList" class="org.slw.framework.interceptor.IpBlackListInterceptor">
+		</interceptor>
+
+		<!-- restStack -->
+		<interceptor-stack name="restStack">
+			<interceptor-ref name="ipWhiteList" />
+			<interceptor-ref name="ipBlackList" />
+			<interceptor-ref name="htmlInterceptor" />
+		</interceptor-stack>
+
+		<!-- finallyStack -->
+		<interceptor-stack name="finallyStack">
+		</interceptor-stack>
+
+	</interceptors>
+
+</slw-config>

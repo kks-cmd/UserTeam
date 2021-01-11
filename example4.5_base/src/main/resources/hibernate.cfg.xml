@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC 
+	"-//Hibernate/Hibernate Configuration DTD//EN"
+	"http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+	<session-factory>
+		<!-- <property name="dialect">org.hibernate.dialect.MySQLDialect</property> -->
+		<property name="dialect">org.hibernate.dialect.DmDialect</property>
+		<property name="hibernate.connection.provider_class">org.hibernate.connection.ProxoolConnectionProvider</property>
+		<property name="hibernate.proxool.pool_alias">proxool</property>
+		<property name="hibernate.proxool.xml">proxool.xml</property>
+		<property name="show_sql">true</property>
+
+		<mapping resource="com/css/app/base/common/attachconfig/model/Attachconfig.hbm.xml" />
+		<mapping resource="com/css/app/base/common/attachment/model/Attachment.hbm.xml" />
+		<mapping resource="com/css/app/base/common/attach/model/FileAttach.hbm.xml" />
+		<mapping resource="com/css/app/base/common/file/model/FileMain.hbm.xml" />
+
+	</session-factory>
+</hibernate-configuration>

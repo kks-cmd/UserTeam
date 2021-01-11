@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+    <class name="com.css.app.base.common.attachconfig.model.Attachconfig" table="ATTACHCONFIG">
+ 
+        <id name="uuid" type="java.lang.String">
+            <column name="UUID" length="150" />
+             <generator class="assigned" />
+        </id>
+        <property name="name" type="java.lang.String">
+            <column name="NAME" length="150" />
+        </property>
+        <property name="ordernum" type="java.lang.Integer">
+            <column name="ORDERNUM" length="10" />
+        </property>
+        <property name="tableName" type="java.lang.String">
+            <column name="TABLE_NAME" length="150" />
+        </property>
+        <property name="tableKey" type="java.lang.String">
+            <column name="TABLE_KEY" length="150" />
+        </property>
+        <property name="fileLength" type="java.lang.Integer">
+            <column name="FILE_LENGTH" length="10" />
+        </property>
+        <property name="fileNumber" type="java.lang.Integer">
+            <column name="FILE_NUMBER" length="10" />
+        </property>
+        <property name="fileExt" type="java.lang.String">
+            <column name="FILE_EXT" length="765" />
+        </property>
+        <property name="extraPara" type="java.lang.String">
+            <column name="EXTRA_PARA" length="1500" />
+        </property>
+
+    </class>
+</hibernate-mapping>

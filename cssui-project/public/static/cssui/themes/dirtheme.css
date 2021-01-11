@@ -1,0 +1,79 @@
+.breviary ul {
+    list-style: none;
+}
+
+.breviary>.con {
+    border: 0;
+    padding: 5px 0px;
+}
+
+.breviary>.con li {
+    float: left;
+    margin: 0 20px;
+    margin-bottom: 30px;
+    width: 190px;
+    height: 110px;
+}
+
+.breviary>.con li a {
+    text-decoration: none;
+    position: relative;
+}
+
+.breviary>.con li img {
+    padding: 3px;
+    border: 1px solid #ededed;
+    width: 190px;
+    height: 100px;
+}
+
+.breviary>.con li img.active {
+    border: 3px solid #1E9FFF;
+}
+
+.breviary>.con li .txtbg {
+    position: absolute;
+    background: #000;
+    width: 187px;
+    height: 25px;
+    left: 2px;
+    text-align: center;
+    filter: alpha(opacity = 40);
+    -moz-opacity: 0.4;
+    opacity: 0.4;
+    z-index: 98;
+    bottom: -39px;
+}
+
+.breviary>.con li .txt {
+    position: absolute;
+    z-index: 99;
+    color: #ffffff;
+    bottom: -36px;
+    left: 40px;
+    width: 50px;
+}
+
+.breviary>.page {
+    position: absolute;
+    bottom: 50px;
+    margin-left: 235px;
+}
+
+.breviary>.page a {
+    background-image: url(../images/skin.png);
+    background-repeat: no-repeat;
+    background-position: 0px 0px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 8px;
+}
+
+.breviary>.page a.cur {
+    background-position: 0px -40px;
+}
+
+.breviary>.page a:hover {
+    background-position: 0px -20px;
+}
